@@ -1,0 +1,43 @@
+{% comment %} <form method = "post" action = ''>
+<a herf='/templates/home.html'><input type="button" value="Click there"></input></a>
+<form> {% endcomment %}
+{% comment %} 
+    <p> {{ data }} </p>
+    <a href= "/home/">></a> {% endcomment %}
+<p></p>
+    
+     
+
+
+        <!DOCTYPE html>
+        <html lang="en" >
+        <head>
+          <meta charset="UTF-8">
+          <title>Error</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|Oswald:600'>
+        <link rel="stylesheet" href="/static/error.css">
+        
+        </head>
+        <body>
+        <!-- partial:index.partial.html -->
+        <div id="error">Error</div>
+        <div class="error-num">An error has occurred
+          {% comment %} <div class="error-num__clip">500</div> {% endcomment %}
+        </div>
+        <p id="desc"></p>
+        <p>Go back to the home page 
+        <!-- partial --></p>
+      </br>
+    </br>
+      </br>
+        <button class="button-12" role="button" onclick="myFunction()">Click Here</button>
+        <script>
+            function myFunction() {
+            window.location.href = "/";
+            }
+            </script> 
+        
+        </body>
+        </html>
+        

@@ -1,0 +1,59 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Evaulation</title>
+  <link rel="stylesheet" href="/static/answer.css">
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+<div class="main-error-page">
+  
+  <h1 class="error-title">
+   This is the Evaulation page</h1>
+  </br>
+</br>
+</br>
+       {% comment %} {% for key in keys%}
+        
+       <h1 class="error-title">Question no. {{key}}<h1/>
+          <p>----------------------------------------------------</p>
+          {% for i in values %}
+          {% for value in values %}
+          {% comment %} {% if key == value  %} {% end
+          <h2 class="error-subtitle">Student answer {{ value.0 }}<h2/>
+      <p>-----------------------------------------------------</p>
+             <h2 class="error-subtitle">Actual answer {{ value.1 }}<h2/>
+                  <p>-----------------------------------------------------</p>
+                  <h2 class="error-subtitle">Marks {{ value.2 }}<h2/>  
+                      <p>-----------------------------------------------------</p> 
+                      {% comment %} {% endif %}   {% endcomment
+                      {% endfor %} 
+                {% endfor %} 
+        {% endfor %}  {% endcomment %}
+        <form method="post" action="/answer/">
+          {% csrf_token %}
+        {% for i in values %}
+        <h1 class="error-title">Question no. <h1/>
+          <hr>
+          {% comment %} <input type="text" value ="{{i.1}}" class="error-subtitle" id="myInput" name = "sudent_{{i}}" readonly> {% endcomment %}
+           <h2 class="error-subtitle">Student answer :  {{ i.1 }}<h2/> 
+            <hr>
+            {% comment %} <input type="text" value ="{{i.0}}" class="error-subtitle" id="myInput" name = "teacher_{{i}}" readonly> {% endcomment %}
+        <h2 class="error-subtitle">Actual answer : {{i.0}}<h2/> 
+          <hr>
+                  <input type="text" value ="{{i.2}}" class="error-subtitle"  name = "marks_{{i}}">  
+                  <hr>
+                  <hr>
+                      {% endfor %} 
+                      <button type="submit">Submit</button>
+                  </form>
+    </div>
+    <!-- partial -->
+  
+    </body>
+    </html>

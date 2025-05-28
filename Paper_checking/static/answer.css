@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.main-error-page {
+  min-height: 1000px;
+  margin: 0px auto;
+  width: auto;
+  max-width: 100%;
+
+}
+.error-title {
+  max-width: 100%; 
+  font-family: Roboto;
+  font-size: 38px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #4b4b62;
+  margin-bottom: 16px;
+}
+
+.error-subtitle {
+  max-width: 95%; 
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #4b4b62;
+  margin-bottom: 24px;
+}
+
+#myInput {
+  width: 2000px;
+  height: 300px;
+}
+

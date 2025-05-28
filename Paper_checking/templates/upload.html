@@ -1,0 +1,84 @@
+{% comment %} {% if message %}
+    <div class="messages">
+        <h3>Messages:</h3>
+        
+    </div>
+    {% endif %}
+
+
+    {% if Student_code %}
+    <div class="messages">
+        <a href= "/answer/">Evaluate</a>
+    </div>
+    {% else%}
+    <div class="messages">
+        <a href= "/">Home</a>
+    </div>
+    {% endif %} {% endcomment %}
+{% comment %} 
+<link rel = "stylesheet" href = "/static/upload.css">
+
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <div class="responsive-container-block leftSide">
+            <p class="text-blk heading">
+                Messages:
+            </br>
+                <p>{{ message }}</p>
+            </p>
+            <p class="text-blk subHeading">
+                </p>
+          </div>
+        
+        </div>
+      </div>
+ {% endcomment %}
+
+
+
+      <!DOCTYPE html>
+      <html>
+          <head>
+              <meta charset="utf-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <title>Uploaded</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link rel="stylesheet" href="/static/upload.css">
+              <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+          </head>
+          <body>
+              
+                  
+   
+                  <div class = "content">
+                      <h2>Messages:
+                    </h2>
+                      <span><!-- line here --></span>
+                      <p>
+        
+                    <p>{{ message }}</p>
+                        
+                      </p>
+                      <ul class = "links">
+                        {% if Student_code %}
+                        <div class = "vertical-line"></div>
+                    <li><a href= "/answer/">Evaluate</a></li>
+                </div>
+                {% else%}
+                <div class = "vertical-line"></div></li>
+                    <li><a href= "/">Home</a>
+                </div>
+                {% endif %}
+                          {% comment %} <a href = "#">work</a></li>
+                          
+                          <li><a href = "#">service</a></li>
+                          <div class = "vertical-line"></div>
+                          <li><a href = "#">contact</a> {% endcomment %}
+                      </ul>
+                      
+                  </div>
+        
+
+          </body>
+      </html>
+      

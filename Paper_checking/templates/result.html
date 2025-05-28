@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Evaulation</title>
+  <link rel="stylesheet" href="/static/answer.css">
+  <link rel="stylesheet" href="/static/result.css">
+</head>
+<body>
+
+<div class="main-error-page">
+    <h1 class="error-title">
+  This result page 
+  </h1>
+       
+        
+        {% for i,val in record.items %}
+    
+           <h2 class="error-subtitle">subject Code :  {{ i }}<h2/> 
+            
+
+             <div class="table-wrapper">
+                <table class="fl-table">
+                    <thead>
+                    <tr>
+                        <th>Roll Number</th>
+                        <th>Marks</th>
+                        
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {% for j in val %}
+                    <tr>
+                        <td style="color : black">{{ j.0 }}</td>
+                        <td style="color : black">{{ j.1 }}</td>
+                        
+                    </tr>
+                    {% endfor %}  
+                    <tbody>
+                </table>
+            </div>
+                    
+                      
+                      
+                    </br>
+                    <hr>
+                </br>
+        {% endfor %} 
+                      
+                  
+    </div>
+    <!-- partial -->
+    
+    </body>
+    </html>
